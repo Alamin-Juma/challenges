@@ -1,12 +1,89 @@
-// Your main styles
-.element {
-    color: blue;
+@use "./variables.scss" as *;
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  height: 100vh;
+  width: 100vw;
+  color: $color-white;
+  background-color: black;
+  margin: 20px;
+}
+
+.side-bar {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  background-color: $lightgreen-color;
+  border-radius: 10px;
+}
+
+.profile-component {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: $beige-color;
+  border-radius: 10px;
+}
+
+.profile-info {
+  padding: 20px;
+  text-align: center;
+  color: $color-white;
+  background-color: $lightgreen-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.app-wrapper {
+  margin-left: 20px;
+}
+
+.wrapper-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.box {
+  width: 100%;
+  height: 80%;
+  border: 1px solid $box-color;
+  padding-top: 50px;
+  background-color: $box-color;
+  color: $color-white;
+  border-radius: 10px;
+
+  &.wrapper {
+    display: grid;
+    align-items: center;
+    justify-items: center;
   }
-  
-  // Media query for min-width: 500px
-  @media (min-width: 1140px) {
-    .element {
-      color: red;
-    }
-  }
-  
+}
+
+.avatar {
+  border-radius: 50%;
+}
+

@@ -1,16 +1,85 @@
-/* prevents adjsutments of font size orientation changes in IE on windoes phone and in ios */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-/* apply a natural box layout model to all elements */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-
-main {
+/* Prevents adjustments of font size on orientation changes in IE on Windows Phone and in iOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /* Apply a natural box layout model to all elements */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  /* Default styles that won't change across all devices */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  nav, footer {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  main {
     padding: 10px;
     width: 100vw;
     height: 100vh;
     margin: 0;
-
-   
-}
-
-/* default styings that wont change across all devices like heading, navigation and footer */
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 539px) {
+    .app {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      height: auto;
+      width: 100vw;
+      margin: 0;
+    }
+  
+    .side-bar {
+      height: auto;
+    }
+  
+    .profile-component {
+      height: auto;
+      margin-bottom: 20px; 
+    }
+  
+    .main {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  
+    .wrapper {
+      height: auto;
+      margin-bottom: 20px; 
+    }
+  
+    .box {
+      height: auto;
+    }
+  }
+  
