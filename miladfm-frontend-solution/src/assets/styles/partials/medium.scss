@@ -1,0 +1,12 @@
+// Your main styles
+.element {
+    color: blue;
+  }
+  
+  // Media query for min-width: 500px
+  @media (min-width: 540px) {
+    .element {
+      color: blue;
+    }
+  }
+  

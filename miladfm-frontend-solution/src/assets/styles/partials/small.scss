@@ -1,0 +1,16 @@
+/* prevents adjsutments of font size orientation changes in IE on windoes phone and in ios */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+main {
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+   
+}
+
+/* default styings that wont change across all devices like heading, navigation and footer */
