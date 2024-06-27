@@ -74,12 +74,18 @@ html {
     }
   
     .wrapper {
-      height: auto;
+      height: 250px;
       margin-bottom: 20px; 
     }
   
     .box {
-      height: auto;
+      height: 80%;
+
+      .span-element {
+        margin-left: 20px;
+        font-size: 1.0em;
+      }
+      
     }
   }
   

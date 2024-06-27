@@ -5,7 +5,8 @@ function Profilecomponent() {
     <div className='profile-component'>
       <img src={images.avatar} alt="profile" className='avatar'  />
       <p>Report for</p>
-      <h2>Stacy <br/> Castello</h2>
+      <h2>Stacy </h2>
+       <h2> Castello</h2>
     </div>
   )
 }

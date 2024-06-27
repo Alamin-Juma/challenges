@@ -31,11 +31,11 @@ const BoxComponent: React.FC<BoxComponentProps> = ({ timeFrameData }) => {
             {/* <p>Daily: {tData.timeframes.daily.current}hrs (Previous: {tData.timeframes.daily.previous}hrs)</p> */}
             <p>
               {" "}
-              <span style={{ fontSize: "3.5em", fontWeight: "bolder" }}>
+              <span className="span-data_weekly">
                 {" "}
                 {tData.timeframes.weekly.current}
               </span>
-              <span style={{ marginLeft: "20px", fontSize:'1.5em' }}>Completed</span> <p />
+              <span className="span-element">Completed</span> <p />
             </p>
             <p>Last Week: {tData.timeframes.weekly.previous} Completed</p>
 

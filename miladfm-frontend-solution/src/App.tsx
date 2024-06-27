@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       {/* Side navigation */}
       <div className="side-bar">
-        <WrapperComponent colorType='lightgreen' imageType={images.someImage}>
+        <WrapperComponent colorType=''>
           <ProfileComponent />
           <div className="profile-info">
             <h2>Daily</h2>
